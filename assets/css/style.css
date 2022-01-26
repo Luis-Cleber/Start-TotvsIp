@@ -490,7 +490,15 @@ input[type=email]:focus {
   position: relative;
   background: #00ffff;
   position: relative;
-  border-radius: 55%;
+  
+}
+
+#desp .row{
+  width: 90%;
+  max-width: 780px;
+  background-color: #00ffff;
+
+ 
 }
 
 /*

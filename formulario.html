@@ -85,11 +85,36 @@
 				
 					<div id="desp">
 						<button id="incluir" onclick="incluir()">Incluir Tabela</button>
-						<table>
-							
-
-						</table>						
-							
+						<div class="panel-body">
+							<table tablename="tabelaDeValores" id="tabelaDeValores" class="table table-houver" noaddbutton="false" nodeletebutton="true">
+								<tbody>
+									<tr detail="true" detailname="tabelaDeValores" class="fw-table-tr linha">
+										<td>
+											<div class="row">
+												<div class="form-group col-md-2">
+													<select class="form-control" name="categoria" id="categoria">         
+														<option value="hospedagem">Hospedagem</option>     
+														<option value="combustivel">Combustivel</option>     
+														<option value="alimentacao">Alimentação</option>     
+														<option value="pedagio">Pedágio</option>
+														<option value="outra">Outra</option>
+													</select>
+												</div>
+												<div class="form-group col-md-2">
+													<input type="text" name="descricao" id="descricao" class="form-control">
+												</div>
+												<div class="form-group col-md-2">
+													<input type="number" name="valorUnitario" id="ValorUnitario" class="form-control campoValor">
+												</div>
+												<div class="form-group col-md-2">
+													<input type="number" name="quintidade" id="quintidade" class="form-control">
+												</div>
+											</div>  
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>						
 					</div>
 				</div>
 			</div>  
