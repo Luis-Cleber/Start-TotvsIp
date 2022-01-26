@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulario</title>
+					<!-- link CDN-->
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- =============================================================================-->
+		<link rel="stylesheet" href="responsive.css" media="screen and (max-width: 768px)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="print.css" media="print">
+	<!-- =============================================================================-->
+	</head>
+    <body>
+        
+                 	<!-- Aqui ficará minha barra de menu-->                             
+		<header>
+			<div class="container">
+				<a href="https://app.lahar.com.br/email-marketing/preview-html/MjA2/dG90dnNpcF81MDMx/MQ==/MTQwNjk=/bHVpcy5jbGViZXJAb3V0bG9vay5wdA==/Y2xpcXVlX3Zpc3VhbGl6YXJfaHRtbF9lbWFpbA==" target="_blank">
+				<img src="./assets/img/start_slogan2.png"  alt="totvs"></a>
+
+				<div class="menu-section">
+				 <div class="menu-toggle">
+					<div class="primeiro"></div>	
+					<div class="segundo"></div>	
+					<div class="terceiro"></div>	
+					</div>	
+					<nav>
+						<ul>
+							<li>
+								<a href="./index.html">Home</a>
+							</li>
+							<li>
+								<a href="./formulario.html">Formulario</a>
+							</li>
+							<li>
+								<a href="./fluig.html">Fluig</a>
+							</li>
+							<li>
+								<a href="./blog.html">Blog</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+					<!-- Aqui ficará meus Relatórios-->
+
+		<form class="form" method= "post"> 
+				<div class="titulo">
+				<p> Relatório de Despesas</p>
+				</div>
+			<div class="formulario">           
+				<h3>Solicitante</h3>
+				<div id="info">
+				<div class="field">
+					<label for="nome">Solicitante:</label>
+					<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+				</div>
+
+				<div class="field">
+					<label for="email">E-Mail:</label>
+					<input type="email" id="email" name="email" placeholder="Digite seu e-Mail" required>
+				</div>   
+				
+				<div class="field">
+					<label for="empresa">Empresa:</label>
+					<input type="text" id="empresa" name="empresa" placeholder="Digite o nome da Empresa" required>
+				</div>           
+				
+				<div class="field">
+					<label for="mensagem">Área:</label>
+					<input type="text" id="mensagem" placeholder="Qual área" required>
+				</div>
+
+				</div>
+
+				<div class= "despesas">
+				<h3>Despesas</h3>			
+				
+					<div id="desp">
+						<button id="incluir" onclick="incluir()">Incluir Tabela</button>
+						<table>
+							
+
+						</table>						
+							
+					</div>
+				</div>
+			</div>  
+		</form>
+        
+			<!-- Aqui ficará meu rodapé-->
+		<footer>			
+            <div class="social-icons">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <p> Copyright ©2021 Todos os direitos reservados</p>
+                </ul>			    
+            </div>			
+
+       </footer>
+
+       <script src="menu.js"></script>
+
+    </body>    
+
+ </html>
