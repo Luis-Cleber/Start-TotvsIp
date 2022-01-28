@@ -82,40 +82,55 @@
 
 				<div class= "despesas">
 				<h3>Despesas</h3>			
-				
+				<tr>
+					<td>
+						<button class="btn btn-large btn-success" onclick="AddTableRow(this)" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Incluir </button>
+					</td>
+				   </tr>
 					<div id="desp">
-						<button id="incluir" onclick="incluir()">Incluir Tabela</button>
-						<div class="panel-body">
-							<table tablename="tabelaDeValores" id="tabelaDeValores" class="table table-houver" noaddbutton="false" nodeletebutton="true">
-								<tbody>
-									<tr detail="true" detailname="tabelaDeValores" class="fw-table-tr linha">
-										<td>
-											<div class="row">
-												<div class="form-group col-md-2">
-													<select class="form-control" name="categoria" id="categoria">         
-														<option value="hospedagem">Hospedagem</option>     
-														<option value="combustivel">Combustivel</option>     
-														<option value="alimentacao">Alimentação</option>     
-														<option value="pedagio">Pedágio</option>
-														<option value="outra">Outra</option>
-													</select>
-												</div>
-												<div class="form-group col-md-2">
-													<input type="text" name="descricao" id="descricao" class="form-control">
-												</div>
-												<div class="form-group col-md-2">
-													<input type="number" name="valorUnitario" id="ValorUnitario" class="form-control campoValor">
-												</div>
-												<div class="form-group col-md-2">
-													<input type="number" name="quintidade" id="quintidade" class="form-control">
-												</div>
-											</div>  
-										</td>
-									</tr>
-								</tbody>
+						<div class="table-responsive">
+							<table id="products-table" class="table table-hover table-bordered">
+							 <tbody>
+							 <tr>
+								<th></th>
+								<th>Categoria</th>
+								<th>Descrição</th>
+								<th>Vlr.Unitário</th>
+								<th>Quantidade</th>													
+								<th>Vlr.Total</th>
+							  </tr>
+							  <tr>
+								<td>
+									
+									<button class="btn btn-large btn-danger" onclick="RemoveTableRow(this)" type="button"><i class="fa fa-trash fa-lg"></i></button>
+									
+								</td>
+								<td><select name="categoria">
+									<option value="pedagio" name="pedagio">pedagio</option>
+									<option value="hospedagem" name="hospeagem">Hospedagem</option>
+									  <option value="combustivel" name="combustivel">Combustível</option>
+									<option value="alimentacao" name="alimentacao">Alimentação</option>
+									<option value="outra" name="outra">Outra</option>
+								</select>
+							</td>
+								<td><input type="text" name="descricao" required></td>
+								<td><input type="number" name="vlr.unitario" required></td>								
+						      <td><input type="number" name="quantidade" required></td>
+							  <td><input type="number" name="vlr.total"></td>  
+							  
+							 </tr>
+							
+							 </tbody>
+							 <tfoot class="total">
+								 <tr>
+									 <td> 
+									<p>Total Geral</p>
+									 <input type="number" name="vlr.geral">
+									</td>
+  								</tr>
+							 </tfoot>
 							</table>
-						</div>						
-					</div>
+						   </div>
 				</div>
 			</div>  
 		</form>
